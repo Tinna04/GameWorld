@@ -1,0 +1,475 @@
+/*--- global ---*/
+
+header {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid darkgray;
+}
+
+body {
+    background-image: url('../gif/background.gif');
+    /*background-image: url('../img/background.png');*/
+    background-size: cover;
+    /*background-repeat: round;*/
+    color:#f2f2f2;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.welcome {
+    border: 2px solid black;
+    
+    background-image: url('../gif/banner.gif');
+    background-size: 50px;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+    color: #f2f2f2;
+    font-family: 'RaborDemo';
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+nav ul li a {
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: #f2f2f2;
+    font-weight: inherit;
+}
+
+/*.logo-link {
+
+}*/
+
+/*--- products-page ---*/
+.category-1 {
+    background-color: transparent; /* Playstation */
+    
+}
+
+.category-2 {
+    background-color: transparent; /* Xbox */
+    
+}
+
+.category-3 {
+    background-color: transparent; /* PC */
+    
+}
+
+.category-4 {
+    background-color: transparent; /* All products */
+    
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    align-items: start;
+}
+
+.product {
+    background: grey;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.product a {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-details button {
+    background-color: #003791;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.product-details button:hover {
+    opacity: 0.8;
+}
+
+.product-description {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 350px 20px 350px;
+    padding: 10px auto;
+}
+
+
+.product button {
+    background-color: #003791;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.product button:hover {
+    opacity: 0.8;
+}
+
+.product img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.product p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/*--- product-details-page ---*/
+.download-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:#28a745;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+.download-btn:hover{
+    background:#218838;
+}
+
+
+/*--- categories-page ---*/
+.categories {
+    text-align: center;
+    padding: 40px;
+    color:#f2f2f2;
+}
+
+.category-list {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.category-playstation {
+    background-image: url('../img/playstation.png'); /* Playstation */
+    background-size: contain;
+    padding: 40px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    background-color: grey;
+    text-decoration: none;
+    color: white;
+    width: 90px;
+}
+
+.category-playstation:hover {
+    background-color: #6280e4;
+}
+
+.category-xbox {
+    background-image: url('../img/xbox.png'); /* Xbox */
+    background-size: contain;
+    padding: 40px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    background-color: grey;
+    text-decoration: none;
+    color: white;
+    width: 90px;
+}
+
+.category-xbox:hover {
+    background-color: #7af462;
+}
+
+.category-pc {
+    background-image: url('../img/pc.png'); /* PC */
+    background-size: contain;
+    padding: 40px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    background-color: grey;
+    text-decoration: none;
+    color: white;
+    width: 90px;
+}
+
+.category-pc:hover {
+    background-color: #f2f2f2;
+}
+/*--- blog-page ---*/
+.blog-container {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+}
+
+.blog-sidebar {
+    width: 200px;
+}
+
+.blog-sidebar a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    color: #f2f2f2;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+.blog-posts {
+    flex: 1;
+}
+
+.blog-post a {
+    text-decoration: underline;
+    color: #f2f2f2;
+}
+
+.blog-post {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.meta {
+    font-size: 14px;
+    color: gray;
+}
+
+/*--- add-blog-page ---*/
+.add-blog-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+
+}
+.add-blog {
+    border: 2px solid white;
+    text-align: center;
+    padding: 40px;
+    padding-right: 400px;
+    color:#f2f2f2;
+    
+}
+
+.add-blog form {
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.add-blog input, .add-blog textarea, .add-blog select, .add-blog button {
+    width: 50%;
+    padding-right: 20px;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+}
+
+.blog-categories{
+    border: 2px solid white;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+}
+
+.blog-categories a {
+    /*border-radius: 30px;
+    text-decoration: underline;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;*/
+
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    color: #f2f2f2;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+/*--- blog-details-page ---*/
+.blog-detail {
+    padding: 20px;
+}
+
+.meta {
+    color: gray;
+    font-size: 14px;
+}
+
+.comments, .comment-form {
+    padding: 20px;
+}
+
+.comment {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+button {
+    background: #cc0000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkred;
+}
+
+/*--- checkout-page ---*/
+.checkout-container {
+    text-align: center;
+}
+
+.checkout {
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px 500px;
+    color:#f2f2f2;
+}
+
+.checkout-btn {
+    background-color: #003791;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    opacity: 0.8;
+}
+ 
+.remove-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.remove-btn:hover {
+    opacity: 0.8;
+}
+
+/*--- about-page ---*/
+.about {
+    display: grid;
+    border: 2px solid white;
+    text-align: left;
+    padding: 40px;
+    color:#f2f2f2;
+}
+
+.about-img {
+    margin: 20px auto;
+    display: block;
+
+}
+
+.container-about {
+    border: 2px solid white;
+    display: flex;
+
+}
+
+/*--- contact-page ---*/
+.contact {
+    border: 2px solid white;
+    text-align: center;
+    padding: 40px;
+    color:#f2f2f2;
+}
+
+.contact form {
+    display: grid;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.contact input, .contact textarea {
+    width: 50%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+}
+
+.contact button {
+    background-color: red;
+    color: white;
+    border: dotted 2px rosybrown;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.contact button:hover {
+    opacity: 0.8;
+}
+
+.summary {
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 20px;
+    color:#f2f2f2;
+}
+
+/*--- Custom Fonts ---*/
+@font-face {
+    font-family: 'RaborDemo';
+    src: url(../fonts/RaborDemo.ttf) format('truetype');
+}
+
+
